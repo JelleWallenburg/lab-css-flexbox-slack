@@ -1,3 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+body {
+    background-color:#540B51;
+    width: 100vw;
+    font-family: 'Mulish'
+}
+
+nav {
+    width: 100vw;
+    display:flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+nav > div {
+    margin:20px;
+}
+
+nav button {
+    margin: 10px;
+    background-color: #540B51;
+    border:none;
+}
+
+#menu{
+    color: white;
+    visibility: hidden;
+}
+
+
+header {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    font-size: 1.5em;
+    height: 80vh;
+}
+
+#teamwork{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+
+#teamwork >h1 {
+    margin:30px;
+}
+
+#signup{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#signup > button + button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header b{
+    color:#ECB12F;
+}
+
+
+header button{
+    background-color: white;
+    height: 10vw;
+    width: 80vw;
+    margin: 10px;
+    font-size: 1.3em;
+}
+
+header button + button {
+    background-color:#4285F4;
+}
+
+main {
+    background-color:#F3EAE2;
+    text-align: left;
+}
+
+#trust > p {
+    font-size: 2em;
+    padding: 20px;
+    text-align: center;
+}
+
+#logo{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:40px;
+    height:200px;
+    text-align: center;
+    justify-content: space-around;    
+}
+
+.plus {
+    padding:20px;
+    height:200px;
+}
+
+.plus > h2{
+    font-size: 2em;
+}
+
+.plus > p{
+    font-size: 1.5em;
+    padding:10px 0px 10px 0px;
+}
+
+.plus > a {
+    text-decoration: none;
+    color: #2E71A6;
+}
+
+#teams {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#teams > h3 {
+    padding: 50px;
+    font-size: 2.5em;
+}
+
+#teams > p {
+    font-size: 1.5em;
+    padding:30px;
+    text-align: center;
+}
+
+#teams > div > button{
+    width: 90vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px 10px 10px 10px;
+}
+
+#teams > div > button {
+    color: white;
+    text-transform: uppercase;
+    background-color: #540B51;
+    border: solid;
+    border-color: #540B51;
+    margin: 20px;
+    font-size: 1.3em;
+}
+
+#teams > div> button + button {
+    color:#540B51;
+    background-color: white
+}
+   
+ul{
+    list-style: none;
+    flex:display;
+    text-align: center;
+    align-items: center;
+}
+
+ul p {
+    font-weight:bold;
+    font-size: 1.2em;
+    width: 40vw;
+}
+
+#teams > span {
+    color:#540B51;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#digital{
+    color:white;
+    height: 40vh;
+    font-size: 1.8em;
+    background-color:#540B51;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#digital > button {
+    color: white;
+    width: 90vw;
+    text-transform: uppercase;
+    background-color: #540B51;
+    border: solid;
+    border-color: white;
+    margin: 10px;
+    padding:10px;
+    font-size: 0.8em;
+}
+
+#digital button + button {
+    color:#540B51;
+    background-color: white
+}
+
+footer {
+    padding:40px;
+    background-color:#F3EAE2;
+}
+
+footer > div {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer ul{
+    text-align:left;
+    line-height: 1.8;
+}
+
+#legal > li{
+    font-weight: bold;
+}
+
+#socials {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:80px;
+}
+
+#last {
+    color:#2E71A6;
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1023px){
+
+    header{
+        
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header h1,p{
+        text-align: left;
+        margin:30px;
+    }
+
+    header > img{
+        width:50%;
+    }
+
+    #teamwork{
+        width: 100%;
+    }
+
+    #teamwork button{
+        width:100%;
+    }
+
+    #image1{
+        width:60%;
+        display:flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        }
+
+    #image2{
+        width:60%;
+        display:flex;
+        flex-direction: column ;
+        align-items: flex-end;
+        border:solid;
+    }
+
+    #teams > div {
+        display:flex;
+        flex-direction: row;
+    }
+
+    #teams >div > button {
+        width: 70%;
+    }
+
+    #legal{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px){
+    #menu{
+        visibility: visible;
+        width: 80vw;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+    }
+    #menu a{
+        color:white;
+    }
+
+
+   
+    #firstdiv{
+        display:flex;
+        flex-direction: row;
+    }
+
+    main > section {
+        
+    }
+
+}
 /*
 background purple: #540B51
 background ivory: #F3EAE2
